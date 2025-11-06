@@ -1,3 +1,0 @@
-/home/s/桌面/C++/build/CMakeFiles/Project_1.dir
-/home/s/桌面/C++/build/CMakeFiles/edit_cache.dir
-/home/s/桌面/C++/build/CMakeFiles/rebuild_cache.dir
