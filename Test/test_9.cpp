@@ -14,9 +14,9 @@ int main() {
     int second = 2;
     int third = 0;
     for (int i = 3; i <= n; ++i) {
-        third = first + second;
-        first = second;
-        second = third;
+        third = first + second;     // 计算当前台阶的方法数
+        first = second;             // 更新前两个台阶的方法数
+        second = third;             // 更新前一个台阶的方法数
     }
     std::cout << third << std::endl;
     return 0;
