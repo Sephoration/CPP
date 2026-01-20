@@ -7,7 +7,7 @@
 // 学生类定义
 class Student {
 public:
-    char name[50];      // 学生姓名
+    char name[50];     // 学生姓名
     int age;           // 学生年龄
     float score_1;     // 第一门课成绩
     float score_2;     // 第二门课成绩
