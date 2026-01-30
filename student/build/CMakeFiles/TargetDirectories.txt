@@ -1,0 +1,3 @@
+C:/Git_Code/CPP/student/build/CMakeFiles/student.dir
+C:/Git_Code/CPP/student/build/CMakeFiles/edit_cache.dir
+C:/Git_Code/CPP/student/build/CMakeFiles/rebuild_cache.dir

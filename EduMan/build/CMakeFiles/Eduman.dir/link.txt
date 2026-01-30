@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\Eduman.dir/objects.a
+C:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\Eduman.dir/objects.a @CMakeFiles\Eduman.dir\objects1.rsp
+C:\msys64\ucrt64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\Eduman.dir/objects.a -Wl,--no-whole-archive -o Eduman.exe -Wl,--out-implib,libEduman.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Eduman.dir\linkLibs.rsp

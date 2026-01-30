@@ -1,0 +1,8 @@
+[
+{
+  "directory": "C:/Git_Code/CPP/EduMan/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -o CMakeFiles\\Eduman.dir\\main.cpp.obj -c C:\\Git_Code\\CPP\\EduMan\\main.cpp",
+  "file": "C:/Git_Code/CPP/EduMan/main.cpp",
+  "output": "CMakeFiles/Eduman.dir/main.cpp.obj"
+}
+]
