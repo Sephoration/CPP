@@ -1,8 +1,14 @@
 [
 {
-  "directory": "C:/Git_Code/CPP/EduMan/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -o CMakeFiles\\Eduman.dir\\main.cpp.obj -c C:\\Git_Code\\CPP\\EduMan\\main.cpp",
-  "file": "C:/Git_Code/CPP/EduMan/main.cpp",
-  "output": "CMakeFiles/Eduman.dir/main.cpp.obj"
+  "directory": "C:/Git_Code/CPP/student/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -o CMakeFiles\\student.dir\\main.cpp.obj -c C:\\Git_Code\\CPP\\student\\main.cpp",
+  "file": "C:/Git_Code/CPP/student/main.cpp",
+  "output": "CMakeFiles/student.dir/main.cpp.obj"
+},
+{
+  "directory": "C:/Git_Code/CPP/student/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -o CMakeFiles\\student.dir\\menu.cpp.obj -c C:\\Git_Code\\CPP\\student\\menu.cpp",
+  "file": "C:/Git_Code/CPP/student/menu.cpp",
+  "output": "CMakeFiles/student.dir/menu.cpp.obj"
 }
 ]

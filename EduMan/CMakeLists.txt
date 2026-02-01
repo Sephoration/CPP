@@ -1,5 +1,12 @@
-cmake_minimum_required(VERSION 3.14)
+#最低限CMake版本要求
+cmake_minimum_required(VERSION 3.14)  
 
-project(Eduman VERSION 0.1.0)
+#项目名称和使用的语言
+project(student LANGUAGES C CXX)
 
-add_executable(Eduman main.cpp)
+#变量定义
+set(SOURCES main.cpp menu.cpp menu.h)
+
+#添加可执行文件
+add_executable(student ${SOURCES})
+

@@ -56,10 +56,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Git_Code\CPP\EduMan
+CMAKE_SOURCE_DIR = C:\Git_Code\CPP\student
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Git_Code\CPP\EduMan\build
+CMAKE_BINARY_DIR = C:\Git_Code\CPP\student\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Git_Code\CPP\EduMan\build\CMakeFiles C:\Git_Code\CPP\EduMan\build\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Git_Code\CPP\student\build\CMakeFiles C:\Git_Code\CPP\student\build\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Git_Code\CPP\EduMan\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Git_Code\CPP\student\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -116,24 +116,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Eduman
+# Target rules for targets named student
 
 # Build rule for target.
-Eduman: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Eduman
-.PHONY : Eduman
+student: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 student
+.PHONY : student
 
 # fast build rule for target.
-Eduman/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Eduman.dir\build.make CMakeFiles/Eduman.dir/build
-.PHONY : Eduman/fast
+student/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\student.dir\build.make CMakeFiles/student.dir/build
+.PHONY : student/fast
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
 # target to build an object file
 main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Eduman.dir\build.make CMakeFiles/Eduman.dir/main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\student.dir\build.make CMakeFiles/student.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -141,7 +141,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Eduman.dir\build.make CMakeFiles/Eduman.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\student.dir\build.make CMakeFiles/student.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -149,8 +149,32 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Eduman.dir\build.make CMakeFiles/Eduman.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\student.dir\build.make CMakeFiles/student.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+menu.obj: menu.cpp.obj
+.PHONY : menu.obj
+
+# target to build an object file
+menu.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\student.dir\build.make CMakeFiles/student.dir/menu.cpp.obj
+.PHONY : menu.cpp.obj
+
+menu.i: menu.cpp.i
+.PHONY : menu.i
+
+# target to preprocess a source file
+menu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\student.dir\build.make CMakeFiles/student.dir/menu.cpp.i
+.PHONY : menu.cpp.i
+
+menu.s: menu.cpp.s
+.PHONY : menu.s
+
+# target to generate assembly for a file
+menu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\student.dir\build.make CMakeFiles/student.dir/menu.cpp.s
+.PHONY : menu.cpp.s
 
 # Help Target
 help:
@@ -160,10 +184,13 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... Eduman
+	@echo ... student
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... menu.obj
+	@echo ... menu.i
+	@echo ... menu.s
 .PHONY : help
 
 

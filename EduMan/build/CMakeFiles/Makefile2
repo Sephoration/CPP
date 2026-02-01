@@ -53,20 +53,20 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Git_Code\CPP\EduMan
+CMAKE_SOURCE_DIR = C:\Git_Code\CPP\student
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Git_Code\CPP\EduMan\build
+CMAKE_BINARY_DIR = C:\Git_Code\CPP\student\build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/Eduman.dir/all
+all: CMakeFiles/student.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen: CMakeFiles/Eduman.dir/codegen
+codegen: CMakeFiles/student.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -74,40 +74,40 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/Eduman.dir/clean
+clean: CMakeFiles/student.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/Eduman.dir
+# Target rules for target CMakeFiles/student.dir
 
 # All Build rule for target.
-CMakeFiles/Eduman.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Eduman.dir\build.make CMakeFiles/Eduman.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Eduman.dir\build.make CMakeFiles/Eduman.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Git_Code\CPP\EduMan\build\CMakeFiles --progress-num=1,2 "Built target Eduman"
-.PHONY : CMakeFiles/Eduman.dir/all
+CMakeFiles/student.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\student.dir\build.make CMakeFiles/student.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\student.dir\build.make CMakeFiles/student.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Git_Code\CPP\student\build\CMakeFiles --progress-num=1,2,3 "Built target student"
+.PHONY : CMakeFiles/student.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Eduman.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Git_Code\CPP\EduMan\build\CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Eduman.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Git_Code\CPP\EduMan\build\CMakeFiles 0
-.PHONY : CMakeFiles/Eduman.dir/rule
+CMakeFiles/student.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Git_Code\CPP\student\build\CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/student.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Git_Code\CPP\student\build\CMakeFiles 0
+.PHONY : CMakeFiles/student.dir/rule
 
 # Convenience name for target.
-Eduman: CMakeFiles/Eduman.dir/rule
-.PHONY : Eduman
+student: CMakeFiles/student.dir/rule
+.PHONY : student
 
 # codegen rule for target.
-CMakeFiles/Eduman.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Eduman.dir\build.make CMakeFiles/Eduman.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Git_Code\CPP\EduMan\build\CMakeFiles --progress-num=1,2 "Finished codegen for target Eduman"
-.PHONY : CMakeFiles/Eduman.dir/codegen
+CMakeFiles/student.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\student.dir\build.make CMakeFiles/student.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Git_Code\CPP\student\build\CMakeFiles --progress-num=1,2,3 "Finished codegen for target student"
+.PHONY : CMakeFiles/student.dir/codegen
 
 # clean rule for target.
-CMakeFiles/Eduman.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Eduman.dir\build.make CMakeFiles/Eduman.dir/clean
-.PHONY : CMakeFiles/Eduman.dir/clean
+CMakeFiles/student.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\student.dir\build.make CMakeFiles/student.dir/clean
+.PHONY : CMakeFiles/student.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

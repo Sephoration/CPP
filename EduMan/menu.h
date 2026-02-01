@@ -1,6 +1,6 @@
-#ifndef MENU_H
-#define MENU_H
-#pragma once // 防止重复包含
+#ifndef MENU_H // 检查是否定义过 MENU_H
+#define MENU_H // 第一次包含时定义这个标记
+#pragma once   // 防止重复包含
 
 // 学生结构
 typedef struct Student
@@ -23,9 +23,8 @@ typedef struct Node
 typedef struct list
 {
     Node *head; // 指向链表头节点的指针
-    int   size; // 链表中节点的数量
+    int size;   // 链表中节点的数量
 } list;
-
 
 // 菜单选项枚举（接口声明）
 enum MenuOptions
@@ -43,5 +42,16 @@ enum MenuOptions
 
 // 显示菜单并返回用户选择
 int Menu();
+
+// 函数声明，不然主函数报错
+void entryStudent(list &list);
+void printStudent(const list &list);
+void saveStudent(const list &list);
+void readStudent(list &list);
+void statisticsStudent(const list &list);
+void searchStudent(const list &list);
+void modifyStudent(list &list);
+void deleteStudent(list &list);
+void freeList(list &list);
 
 #endif // MENU_H
