@@ -1,0 +1,14 @@
+[
+{
+  "directory": "C:/Git_Code/CPP/Thread/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe   -g -o CMakeFiles\\thread.dir\\main.c.obj -c C:\\Git_Code\\CPP\\Thread\\main.c",
+  "file": "C:/Git_Code/CPP/Thread/main.c",
+  "output": "CMakeFiles/thread.dir/main.c.obj"
+},
+{
+  "directory": "C:/Git_Code/CPP/Thread/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe   -g -o CMakeFiles\\thread.dir\\thrd_pool.c.obj -c C:\\Git_Code\\CPP\\Thread\\thrd_pool.c",
+  "file": "C:/Git_Code/CPP/Thread/thrd_pool.c",
+  "output": "CMakeFiles/thread.dir/thrd_pool.c.obj"
+}
+]

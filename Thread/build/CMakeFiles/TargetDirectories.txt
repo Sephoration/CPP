@@ -1,0 +1,3 @@
+C:/Git_Code/CPP/Thread/build/CMakeFiles/thread.dir
+C:/Git_Code/CPP/Thread/build/CMakeFiles/edit_cache.dir
+C:/Git_Code/CPP/Thread/build/CMakeFiles/rebuild_cache.dir
