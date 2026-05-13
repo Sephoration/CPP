@@ -56,7 +56,7 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Git_Code\CPP\Thread
+CMAKE_SOURCE_DIR = C:\Git_Code\CPP
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = C:\Git_Code\CPP\build
@@ -125,56 +125,242 @@ thread: cmake_check_build_system
 
 # fast build rule for target.
 thread/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\thread.dir\build.make CMakeFiles/thread.dir/build
+	$(MAKE) $(MAKESILENT) -f Thread\CMakeFiles\thread.dir\build.make Thread/CMakeFiles/thread.dir/build
 .PHONY : thread/fast
 
-main.obj: main.c.obj
-.PHONY : main.obj
+#=============================================================================
+# Target rules for targets named student
 
-# target to build an object file
-main.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\thread.dir\build.make CMakeFiles/thread.dir/main.c.obj
-.PHONY : main.c.obj
+# Build rule for target.
+student: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 student
+.PHONY : student
 
-main.i: main.c.i
-.PHONY : main.i
+# fast build rule for target.
+student/fast:
+	$(MAKE) $(MAKESILENT) -f EduMan\CMakeFiles\student.dir\build.make EduMan/CMakeFiles/student.dir/build
+.PHONY : student/fast
 
-# target to preprocess a source file
-main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\thread.dir\build.make CMakeFiles/thread.dir/main.c.i
-.PHONY : main.c.i
+#=============================================================================
+# Target rules for targets named One
 
-main.s: main.c.s
-.PHONY : main.s
+# Build rule for target.
+One: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 One
+.PHONY : One
 
-# target to generate assembly for a file
-main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\thread.dir\build.make CMakeFiles/thread.dir/main.c.s
-.PHONY : main.c.s
+# fast build rule for target.
+One/fast:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\One.dir\build.make Test/CMakeFiles/One.dir/build
+.PHONY : One/fast
 
-thrd_pool.obj: thrd_pool.c.obj
-.PHONY : thrd_pool.obj
+#=============================================================================
+# Target rules for targets named a
 
-# target to build an object file
-thrd_pool.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\thread.dir\build.make CMakeFiles/thread.dir/thrd_pool.c.obj
-.PHONY : thrd_pool.c.obj
+# Build rule for target.
+a : cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 a
+.PHONY : a
 
-thrd_pool.i: thrd_pool.c.i
-.PHONY : thrd_pool.i
+# fast build rule for target.
+a/fast:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\a.dir\build.make Test/CMakeFiles/a.dir/build
+.PHONY : a/fast
 
-# target to preprocess a source file
-thrd_pool.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\thread.dir\build.make CMakeFiles/thread.dir/thrd_pool.c.i
-.PHONY : thrd_pool.c.i
+#=============================================================================
+# Target rules for targets named test_1
 
-thrd_pool.s: thrd_pool.c.s
-.PHONY : thrd_pool.s
+# Build rule for target.
+test_1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_1
+.PHONY : test_1
 
-# target to generate assembly for a file
-thrd_pool.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\thread.dir\build.make CMakeFiles/thread.dir/thrd_pool.c.s
-.PHONY : thrd_pool.c.s
+# fast build rule for target.
+test_1/fast:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\test_1.dir\build.make Test/CMakeFiles/test_1.dir/build
+.PHONY : test_1/fast
+
+#=============================================================================
+# Target rules for targets named test_10
+
+# Build rule for target.
+test_10: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_10
+.PHONY : test_10
+
+# fast build rule for target.
+test_10/fast:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\test_10.dir\build.make Test/CMakeFiles/test_10.dir/build
+.PHONY : test_10/fast
+
+#=============================================================================
+# Target rules for targets named test_11
+
+# Build rule for target.
+test_11: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_11
+.PHONY : test_11
+
+# fast build rule for target.
+test_11/fast:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\test_11.dir\build.make Test/CMakeFiles/test_11.dir/build
+.PHONY : test_11/fast
+
+#=============================================================================
+# Target rules for targets named test_2
+
+# Build rule for target.
+test_2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_2
+.PHONY : test_2
+
+# fast build rule for target.
+test_2/fast:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\test_2.dir\build.make Test/CMakeFiles/test_2.dir/build
+.PHONY : test_2/fast
+
+#=============================================================================
+# Target rules for targets named test_3
+
+# Build rule for target.
+test_3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_3
+.PHONY : test_3
+
+# fast build rule for target.
+test_3/fast:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\test_3.dir\build.make Test/CMakeFiles/test_3.dir/build
+.PHONY : test_3/fast
+
+#=============================================================================
+# Target rules for targets named test_4
+
+# Build rule for target.
+test_4: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_4
+.PHONY : test_4
+
+# fast build rule for target.
+test_4/fast:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\test_4.dir\build.make Test/CMakeFiles/test_4.dir/build
+.PHONY : test_4/fast
+
+#=============================================================================
+# Target rules for targets named test_5
+
+# Build rule for target.
+test_5: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_5
+.PHONY : test_5
+
+# fast build rule for target.
+test_5/fast:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\test_5.dir\build.make Test/CMakeFiles/test_5.dir/build
+.PHONY : test_5/fast
+
+#=============================================================================
+# Target rules for targets named test_6
+
+# Build rule for target.
+test_6: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_6
+.PHONY : test_6
+
+# fast build rule for target.
+test_6/fast:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\test_6.dir\build.make Test/CMakeFiles/test_6.dir/build
+.PHONY : test_6/fast
+
+#=============================================================================
+# Target rules for targets named test_7
+
+# Build rule for target.
+test_7: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_7
+.PHONY : test_7
+
+# fast build rule for target.
+test_7/fast:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\test_7.dir\build.make Test/CMakeFiles/test_7.dir/build
+.PHONY : test_7/fast
+
+#=============================================================================
+# Target rules for targets named test_8
+
+# Build rule for target.
+test_8: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_8
+.PHONY : test_8
+
+# fast build rule for target.
+test_8/fast:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\test_8.dir\build.make Test/CMakeFiles/test_8.dir/build
+.PHONY : test_8/fast
+
+#=============================================================================
+# Target rules for targets named test_9
+
+# Build rule for target.
+test_9: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_9
+.PHONY : test_9
+
+# fast build rule for target.
+test_9/fast:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\test_9.dir\build.make Test/CMakeFiles/test_9.dir/build
+.PHONY : test_9/fast
+
+#=============================================================================
+# Target rules for targets named 1
+
+# Build rule for target.
+1 : cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 1
+.PHONY : 1
+
+# fast build rule for target.
+1/fast:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\1.dir\build.make Test/CMakeFiles/1.dir/build
+.PHONY : 1/fast
+
+#=============================================================================
+# Target rules for targets named test_Array
+
+# Build rule for target.
+test_Array: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_Array
+.PHONY : test_Array
+
+# fast build rule for target.
+test_Array/fast:
+	$(MAKE) $(MAKESILENT) -f STL\CMakeFiles\test_Array.dir\build.make STL/CMakeFiles/test_Array.dir/build
+.PHONY : test_Array/fast
+
+#=============================================================================
+# Target rules for targets named test_Function
+
+# Build rule for target.
+test_Function: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_Function
+.PHONY : test_Function
+
+# fast build rule for target.
+test_Function/fast:
+	$(MAKE) $(MAKESILENT) -f STL\CMakeFiles\test_Function.dir\build.make STL/CMakeFiles/test_Function.dir/build
+.PHONY : test_Function/fast
+
+#=============================================================================
+# Target rules for targets named test_UniquePtr
+
+# Build rule for target.
+test_UniquePtr: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_UniquePtr
+.PHONY : test_UniquePtr
+
+# fast build rule for target.
+test_UniquePtr/fast:
+	$(MAKE) $(MAKESILENT) -f STL\CMakeFiles\test_UniquePtr.dir\build.make STL/CMakeFiles/test_UniquePtr.dir/build
+.PHONY : test_UniquePtr/fast
 
 # Help Target
 help:
@@ -184,13 +370,25 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... 1
+	@echo ... One
+	@echo ... a
+	@echo ... student
+	@echo ... test_1
+	@echo ... test_10
+	@echo ... test_11
+	@echo ... test_2
+	@echo ... test_3
+	@echo ... test_4
+	@echo ... test_5
+	@echo ... test_6
+	@echo ... test_7
+	@echo ... test_8
+	@echo ... test_9
+	@echo ... test_Array
+	@echo ... test_Function
+	@echo ... test_UniquePtr
 	@echo ... thread
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
-	@echo ... thrd_pool.obj
-	@echo ... thrd_pool.i
-	@echo ... thrd_pool.s
 .PHONY : help
 
 

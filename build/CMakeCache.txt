@@ -20,14 +20,15 @@ CMAKE_ADDR2LINE:FILEPATH=C:/msys64/ucrt64/bin/addr2line.exe
 //Path to a program.
 CMAKE_AR:FILEPATH=C:/msys64/ucrt64/bin/ar.exe
 
-//No help, variable specified on the command line.
-CMAKE_BUILD_TYPE:STRING=Debug
+//Choose the type of build, options are: None Debug Release RelWithDebInfo
+// MinSizeRel ...
+CMAKE_BUILD_TYPE:STRING=
 
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
-//No help, variable specified on the command line.
-CMAKE_CXX_COMPILER:FILEPATH=C:/msys64/ucrt64/bin/g++.exe
+//CXX compiler
+CMAKE_CXX_COMPILER:FILEPATH=C:/msys64/ucrt64/bin/c++.exe
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -55,8 +56,8 @@ CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 //Libraries linked by default with all C++ applications.
 CMAKE_CXX_STANDARD_LIBRARIES:STRING=-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
 
-//No help, variable specified on the command line.
-CMAKE_C_COMPILER:FILEPATH=C:/msys64/ucrt64/bin/gcc.exe
+//C compiler
+CMAKE_C_COMPILER:FILEPATH=C:/msys64/ucrt64/bin/cc.exe
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -102,9 +103,6 @@ CMAKE_EXE_LINKER_FLAGS_RELEASE:STRING=
 //Flags used by the linker during RELWITHDEBINFO builds.
 CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
-//No help, variable specified on the command line.
-CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE
-
 //Value Computed by CMake.
 CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=C:/Git_Code/CPP/build/CMakeFiles/pkgRedirects
 
@@ -112,7 +110,7 @@ CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=C:/Git_Code/CPP/build/CMakeFiles/pkgRedi
 CMAKE_GNUtoMS:BOOL=OFF
 
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/thread
+CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/CPP_Projects
 
 //Path to a program.
 CMAKE_LINKER:FILEPATH=C:/msys64/ucrt64/bin/ld.exe
@@ -159,7 +157,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=thread
+CMAKE_PROJECT_NAME:STATIC=CPP_Projects
 
 //Value Computed by CMake
 CMAKE_PROJECT_SPDX_LICENSE:STATIC=
@@ -248,10 +246,55 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
-thread_BINARY_DIR:STATIC=C:/Git_Code/CPP/build
+CPP_Projects_BINARY_DIR:STATIC=C:/Git_Code/CPP/build
 
 //Value Computed by CMake
-thread_IS_TOP_LEVEL:STATIC=ON
+CPP_Projects_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+CPP_Projects_SOURCE_DIR:STATIC=C:/Git_Code/CPP
+
+//Value Computed by CMake
+STL_BINARY_DIR:STATIC=C:/Git_Code/CPP/build/STL
+
+//Value Computed by CMake
+STL_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+STL_SOURCE_DIR:STATIC=C:/Git_Code/CPP/STL
+
+//Value Computed by CMake
+Test_BINARY_DIR:STATIC=C:/Git_Code/CPP/build/Test
+
+//Value Computed by CMake
+Test_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+Test_SOURCE_DIR:STATIC=C:/Git_Code/CPP/Test
+
+//Value Computed by CMake
+TinySTL_BINARY_DIR:STATIC=C:/Git_Code/CPP/build/TinySTL
+
+//Value Computed by CMake
+TinySTL_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+TinySTL_SOURCE_DIR:STATIC=C:/Git_Code/CPP/TinySTL
+
+//Value Computed by CMake
+student_BINARY_DIR:STATIC=C:/Git_Code/CPP/build/EduMan
+
+//Value Computed by CMake
+student_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+student_SOURCE_DIR:STATIC=C:/Git_Code/CPP/EduMan
+
+//Value Computed by CMake
+thread_BINARY_DIR:STATIC=C:/Git_Code/CPP/build/Thread
+
+//Value Computed by CMake
+thread_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
 thread_SOURCE_DIR:STATIC=C:/Git_Code/CPP/Thread
@@ -345,7 +388,7 @@ CMAKE_GENERATOR_PLATFORM:INTERNAL=
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=C:/Git_Code/CPP/Thread
+CMAKE_HOME_DIRECTORY:INTERNAL=C:/Git_Code/CPP
 //ADVANCED property for variable: CMAKE_LINKER
 CMAKE_LINKER-ADVANCED:INTERNAL=1
 //Name of CMakeLists files to read
@@ -365,7 +408,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

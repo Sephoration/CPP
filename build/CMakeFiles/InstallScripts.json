@@ -1,7 +1,11 @@
 {
 	"InstallScripts" : 
 	[
-		"C:/Git_Code/CPP/build/cmake_install.cmake"
+		"C:/Git_Code/CPP/build/cmake_install.cmake",
+		"C:/Git_Code/CPP/build/Thread/cmake_install.cmake",
+		"C:/Git_Code/CPP/build/EduMan/cmake_install.cmake",
+		"C:/Git_Code/CPP/build/Test/cmake_install.cmake",
+		"C:/Git_Code/CPP/build/STL/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

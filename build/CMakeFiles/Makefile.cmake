@@ -7,6 +7,10 @@ set(CMAKE_DEPENDS_GENERATOR "MinGW Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
+  "C:/Git_Code/CPP/CMakeLists.txt"
+  "C:/Git_Code/CPP/EduMan/CMakeLists.txt"
+  "C:/Git_Code/CPP/STL/CMakeLists.txt"
+  "C:/Git_Code/CPP/Test/CMakeLists.txt"
   "C:/Git_Code/CPP/Thread/CMakeLists.txt"
   "CMakeFiles/4.2.3/CMakeCCompiler.cmake"
   "CMakeFiles/4.2.3/CMakeCXXCompiler.cmake"
@@ -55,9 +59,31 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Thread/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "EduMan/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Test/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "STL/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/thread.dir/DependInfo.cmake"
+  "Thread/CMakeFiles/thread.dir/DependInfo.cmake"
+  "EduMan/CMakeFiles/student.dir/DependInfo.cmake"
+  "Test/CMakeFiles/One.dir/DependInfo.cmake"
+  "Test/CMakeFiles/a.dir/DependInfo.cmake"
+  "Test/CMakeFiles/test_1.dir/DependInfo.cmake"
+  "Test/CMakeFiles/test_10.dir/DependInfo.cmake"
+  "Test/CMakeFiles/test_11.dir/DependInfo.cmake"
+  "Test/CMakeFiles/test_2.dir/DependInfo.cmake"
+  "Test/CMakeFiles/test_3.dir/DependInfo.cmake"
+  "Test/CMakeFiles/test_4.dir/DependInfo.cmake"
+  "Test/CMakeFiles/test_5.dir/DependInfo.cmake"
+  "Test/CMakeFiles/test_6.dir/DependInfo.cmake"
+  "Test/CMakeFiles/test_7.dir/DependInfo.cmake"
+  "Test/CMakeFiles/test_8.dir/DependInfo.cmake"
+  "Test/CMakeFiles/test_9.dir/DependInfo.cmake"
+  "Test/CMakeFiles/1.dir/DependInfo.cmake"
+  "STL/CMakeFiles/test_Array.dir/DependInfo.cmake"
+  "STL/CMakeFiles/test_Function.dir/DependInfo.cmake"
+  "STL/CMakeFiles/test_UniquePtr.dir/DependInfo.cmake"
   )

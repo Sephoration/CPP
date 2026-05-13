@@ -53,7 +53,7 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Git_Code\CPP\Thread
+CMAKE_SOURCE_DIR = C:\Git_Code\CPP
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = C:\Git_Code\CPP\build
@@ -62,52 +62,761 @@ CMAKE_BINARY_DIR = C:\Git_Code\CPP\build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/thread.dir/all
+all: Thread/all
+all: EduMan/all
+all: Test/all
+all: STL/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen: CMakeFiles/thread.dir/codegen
+codegen: Thread/codegen
+codegen: EduMan/codegen
+codegen: Test/codegen
+codegen: STL/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: Thread/preinstall
+preinstall: EduMan/preinstall
+preinstall: Test/preinstall
+preinstall: STL/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/thread.dir/clean
+clean: Thread/clean
+clean: EduMan/clean
+clean: Test/clean
+clean: STL/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/thread.dir
+# Directory level rules for directory EduMan
+
+# Recursive "all" directory target.
+EduMan/all: EduMan/CMakeFiles/student.dir/all
+.PHONY : EduMan/all
+
+# Recursive "codegen" directory target.
+EduMan/codegen: EduMan/CMakeFiles/student.dir/codegen
+.PHONY : EduMan/codegen
+
+# Recursive "preinstall" directory target.
+EduMan/preinstall:
+.PHONY : EduMan/preinstall
+
+# Recursive "clean" directory target.
+EduMan/clean: EduMan/CMakeFiles/student.dir/clean
+.PHONY : EduMan/clean
+
+#=============================================================================
+# Directory level rules for directory STL
+
+# Recursive "all" directory target.
+STL/all: STL/CMakeFiles/test_Array.dir/all
+STL/all: STL/CMakeFiles/test_Function.dir/all
+STL/all: STL/CMakeFiles/test_UniquePtr.dir/all
+.PHONY : STL/all
+
+# Recursive "codegen" directory target.
+STL/codegen: STL/CMakeFiles/test_Array.dir/codegen
+STL/codegen: STL/CMakeFiles/test_Function.dir/codegen
+STL/codegen: STL/CMakeFiles/test_UniquePtr.dir/codegen
+.PHONY : STL/codegen
+
+# Recursive "preinstall" directory target.
+STL/preinstall:
+.PHONY : STL/preinstall
+
+# Recursive "clean" directory target.
+STL/clean: STL/CMakeFiles/test_Array.dir/clean
+STL/clean: STL/CMakeFiles/test_Function.dir/clean
+STL/clean: STL/CMakeFiles/test_UniquePtr.dir/clean
+.PHONY : STL/clean
+
+#=============================================================================
+# Directory level rules for directory Test
+
+# Recursive "all" directory target.
+Test/all: Test/CMakeFiles/One.dir/all
+Test/all: Test/CMakeFiles/a.dir/all
+Test/all: Test/CMakeFiles/test_1.dir/all
+Test/all: Test/CMakeFiles/test_10.dir/all
+Test/all: Test/CMakeFiles/test_11.dir/all
+Test/all: Test/CMakeFiles/test_2.dir/all
+Test/all: Test/CMakeFiles/test_3.dir/all
+Test/all: Test/CMakeFiles/test_4.dir/all
+Test/all: Test/CMakeFiles/test_5.dir/all
+Test/all: Test/CMakeFiles/test_6.dir/all
+Test/all: Test/CMakeFiles/test_7.dir/all
+Test/all: Test/CMakeFiles/test_8.dir/all
+Test/all: Test/CMakeFiles/test_9.dir/all
+Test/all: Test/CMakeFiles/1.dir/all
+.PHONY : Test/all
+
+# Recursive "codegen" directory target.
+Test/codegen: Test/CMakeFiles/One.dir/codegen
+Test/codegen: Test/CMakeFiles/a.dir/codegen
+Test/codegen: Test/CMakeFiles/test_1.dir/codegen
+Test/codegen: Test/CMakeFiles/test_10.dir/codegen
+Test/codegen: Test/CMakeFiles/test_11.dir/codegen
+Test/codegen: Test/CMakeFiles/test_2.dir/codegen
+Test/codegen: Test/CMakeFiles/test_3.dir/codegen
+Test/codegen: Test/CMakeFiles/test_4.dir/codegen
+Test/codegen: Test/CMakeFiles/test_5.dir/codegen
+Test/codegen: Test/CMakeFiles/test_6.dir/codegen
+Test/codegen: Test/CMakeFiles/test_7.dir/codegen
+Test/codegen: Test/CMakeFiles/test_8.dir/codegen
+Test/codegen: Test/CMakeFiles/test_9.dir/codegen
+Test/codegen: Test/CMakeFiles/1.dir/codegen
+.PHONY : Test/codegen
+
+# Recursive "preinstall" directory target.
+Test/preinstall:
+.PHONY : Test/preinstall
+
+# Recursive "clean" directory target.
+Test/clean: Test/CMakeFiles/One.dir/clean
+Test/clean: Test/CMakeFiles/a.dir/clean
+Test/clean: Test/CMakeFiles/test_1.dir/clean
+Test/clean: Test/CMakeFiles/test_10.dir/clean
+Test/clean: Test/CMakeFiles/test_11.dir/clean
+Test/clean: Test/CMakeFiles/test_2.dir/clean
+Test/clean: Test/CMakeFiles/test_3.dir/clean
+Test/clean: Test/CMakeFiles/test_4.dir/clean
+Test/clean: Test/CMakeFiles/test_5.dir/clean
+Test/clean: Test/CMakeFiles/test_6.dir/clean
+Test/clean: Test/CMakeFiles/test_7.dir/clean
+Test/clean: Test/CMakeFiles/test_8.dir/clean
+Test/clean: Test/CMakeFiles/test_9.dir/clean
+Test/clean: Test/CMakeFiles/1.dir/clean
+.PHONY : Test/clean
+
+#=============================================================================
+# Directory level rules for directory Thread
+
+# Recursive "all" directory target.
+Thread/all: Thread/CMakeFiles/thread.dir/all
+.PHONY : Thread/all
+
+# Recursive "codegen" directory target.
+Thread/codegen: Thread/CMakeFiles/thread.dir/codegen
+.PHONY : Thread/codegen
+
+# Recursive "preinstall" directory target.
+Thread/preinstall:
+.PHONY : Thread/preinstall
+
+# Recursive "clean" directory target.
+Thread/clean: Thread/CMakeFiles/thread.dir/clean
+.PHONY : Thread/clean
+
+#=============================================================================
+# Target rules for target Thread/CMakeFiles/thread.dir
 
 # All Build rule for target.
-CMakeFiles/thread.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\thread.dir\build.make CMakeFiles/thread.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\thread.dir\build.make CMakeFiles/thread.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Git_Code\CPP\build\CMakeFiles --progress-num=1,2,3 "Built target thread"
-.PHONY : CMakeFiles/thread.dir/all
+Thread/CMakeFiles/thread.dir/all:
+	$(MAKE) $(MAKESILENT) -f Thread\CMakeFiles\thread.dir\build.make Thread/CMakeFiles/thread.dir/depend
+	$(MAKE) $(MAKESILENT) -f Thread\CMakeFiles\thread.dir\build.make Thread/CMakeFiles/thread.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Git_Code\CPP\build\CMakeFiles --progress-num=38,39,40 "Built target thread"
+.PHONY : Thread/CMakeFiles/thread.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/thread.dir/rule: cmake_check_build_system
+Thread/CMakeFiles/thread.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Git_Code\CPP\build\CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/thread.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Thread/CMakeFiles/thread.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Git_Code\CPP\build\CMakeFiles 0
-.PHONY : CMakeFiles/thread.dir/rule
+.PHONY : Thread/CMakeFiles/thread.dir/rule
 
 # Convenience name for target.
-thread: CMakeFiles/thread.dir/rule
+thread: Thread/CMakeFiles/thread.dir/rule
 .PHONY : thread
 
 # codegen rule for target.
-CMakeFiles/thread.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\thread.dir\build.make CMakeFiles/thread.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Git_Code\CPP\build\CMakeFiles --progress-num=1,2,3 "Finished codegen for target thread"
-.PHONY : CMakeFiles/thread.dir/codegen
+Thread/CMakeFiles/thread.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f Thread\CMakeFiles\thread.dir\build.make Thread/CMakeFiles/thread.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Git_Code\CPP\build\CMakeFiles --progress-num=38,39,40 "Finished codegen for target thread"
+.PHONY : Thread/CMakeFiles/thread.dir/codegen
 
 # clean rule for target.
-CMakeFiles/thread.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\thread.dir\build.make CMakeFiles/thread.dir/clean
-.PHONY : CMakeFiles/thread.dir/clean
+Thread/CMakeFiles/thread.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Thread\CMakeFiles\thread.dir\build.make Thread/CMakeFiles/thread.dir/clean
+.PHONY : Thread/CMakeFiles/thread.dir/clean
+
+#=============================================================================
+# Target rules for target EduMan/CMakeFiles/student.dir
+
+# All Build rule for target.
+EduMan/CMakeFiles/student.dir/all:
+	$(MAKE) $(MAKESILENT) -f EduMan\CMakeFiles\student.dir\build.make EduMan/CMakeFiles/student.dir/depend
+	$(MAKE) $(MAKESILENT) -f EduMan\CMakeFiles\student.dir\build.make EduMan/CMakeFiles/student.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Git_Code\CPP\build\CMakeFiles --progress-num=7,8,9 "Built target student"
+.PHONY : EduMan/CMakeFiles/student.dir/all
+
+# Build rule for subdir invocation for target.
+EduMan/CMakeFiles/student.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Git_Code\CPP\build\CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 EduMan/CMakeFiles/student.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Git_Code\CPP\build\CMakeFiles 0
+.PHONY : EduMan/CMakeFiles/student.dir/rule
+
+# Convenience name for target.
+student: EduMan/CMakeFiles/student.dir/rule
+.PHONY : student
+
+# codegen rule for target.
+EduMan/CMakeFiles/student.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f EduMan\CMakeFiles\student.dir\build.make EduMan/CMakeFiles/student.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Git_Code\CPP\build\CMakeFiles --progress-num=7,8,9 "Finished codegen for target student"
+.PHONY : EduMan/CMakeFiles/student.dir/codegen
+
+# clean rule for target.
+EduMan/CMakeFiles/student.dir/clean:
+	$(MAKE) $(MAKESILENT) -f EduMan\CMakeFiles\student.dir\build.make EduMan/CMakeFiles/student.dir/clean
+.PHONY : EduMan/CMakeFiles/student.dir/clean
+
+#=============================================================================
+# Target rules for target Test/CMakeFiles/One.dir
+
+# All Build rule for target.
+Test/CMakeFiles/One.dir/all:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\One.dir\build.make Test/CMakeFiles/One.dir/depend
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\One.dir\build.make Test/CMakeFiles/One.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Git_Code\CPP\build\CMakeFiles --progress-num=3,4 "Built target One"
+.PHONY : Test/CMakeFiles/One.dir/all
+
+# Build rule for subdir invocation for target.
+Test/CMakeFiles/One.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Git_Code\CPP\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Test/CMakeFiles/One.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Git_Code\CPP\build\CMakeFiles 0
+.PHONY : Test/CMakeFiles/One.dir/rule
+
+# Convenience name for target.
+One: Test/CMakeFiles/One.dir/rule
+.PHONY : One
+
+# codegen rule for target.
+Test/CMakeFiles/One.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\One.dir\build.make Test/CMakeFiles/One.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Git_Code\CPP\build\CMakeFiles --progress-num=3,4 "Finished codegen for target One"
+.PHONY : Test/CMakeFiles/One.dir/codegen
+
+# clean rule for target.
+Test/CMakeFiles/One.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\One.dir\build.make Test/CMakeFiles/One.dir/clean
+.PHONY : Test/CMakeFiles/One.dir/clean
+
+#=============================================================================
+# Target rules for target Test/CMakeFiles/a.dir
+
+# All Build rule for target.
+Test/CMakeFiles/a.dir/all:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\a.dir\build.make Test/CMakeFiles/a.dir/depend
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\a.dir\build.make Test/CMakeFiles/a.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Git_Code\CPP\build\CMakeFiles --progress-num=5,6 "Built target a"
+.PHONY : Test/CMakeFiles/a.dir/all
+
+# Build rule for subdir invocation for target.
+Test/CMakeFiles/a.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Git_Code\CPP\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Test/CMakeFiles/a.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Git_Code\CPP\build\CMakeFiles 0
+.PHONY : Test/CMakeFiles/a.dir/rule
+
+# Convenience name for target.
+a : Test/CMakeFiles/a.dir/rule
+.PHONY : a
+
+# codegen rule for target.
+Test/CMakeFiles/a.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\a.dir\build.make Test/CMakeFiles/a.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Git_Code\CPP\build\CMakeFiles --progress-num=5,6 "Finished codegen for target a"
+.PHONY : Test/CMakeFiles/a.dir/codegen
+
+# clean rule for target.
+Test/CMakeFiles/a.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\a.dir\build.make Test/CMakeFiles/a.dir/clean
+.PHONY : Test/CMakeFiles/a.dir/clean
+
+#=============================================================================
+# Target rules for target Test/CMakeFiles/test_1.dir
+
+# All Build rule for target.
+Test/CMakeFiles/test_1.dir/all:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\test_1.dir\build.make Test/CMakeFiles/test_1.dir/depend
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\test_1.dir\build.make Test/CMakeFiles/test_1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Git_Code\CPP\build\CMakeFiles --progress-num=10,11 "Built target test_1"
+.PHONY : Test/CMakeFiles/test_1.dir/all
+
+# Build rule for subdir invocation for target.
+Test/CMakeFiles/test_1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Git_Code\CPP\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Test/CMakeFiles/test_1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Git_Code\CPP\build\CMakeFiles 0
+.PHONY : Test/CMakeFiles/test_1.dir/rule
+
+# Convenience name for target.
+test_1: Test/CMakeFiles/test_1.dir/rule
+.PHONY : test_1
+
+# codegen rule for target.
+Test/CMakeFiles/test_1.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\test_1.dir\build.make Test/CMakeFiles/test_1.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Git_Code\CPP\build\CMakeFiles --progress-num=10,11 "Finished codegen for target test_1"
+.PHONY : Test/CMakeFiles/test_1.dir/codegen
+
+# clean rule for target.
+Test/CMakeFiles/test_1.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\test_1.dir\build.make Test/CMakeFiles/test_1.dir/clean
+.PHONY : Test/CMakeFiles/test_1.dir/clean
+
+#=============================================================================
+# Target rules for target Test/CMakeFiles/test_10.dir
+
+# All Build rule for target.
+Test/CMakeFiles/test_10.dir/all:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\test_10.dir\build.make Test/CMakeFiles/test_10.dir/depend
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\test_10.dir\build.make Test/CMakeFiles/test_10.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Git_Code\CPP\build\CMakeFiles --progress-num=12,13 "Built target test_10"
+.PHONY : Test/CMakeFiles/test_10.dir/all
+
+# Build rule for subdir invocation for target.
+Test/CMakeFiles/test_10.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Git_Code\CPP\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Test/CMakeFiles/test_10.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Git_Code\CPP\build\CMakeFiles 0
+.PHONY : Test/CMakeFiles/test_10.dir/rule
+
+# Convenience name for target.
+test_10: Test/CMakeFiles/test_10.dir/rule
+.PHONY : test_10
+
+# codegen rule for target.
+Test/CMakeFiles/test_10.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\test_10.dir\build.make Test/CMakeFiles/test_10.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Git_Code\CPP\build\CMakeFiles --progress-num=12,13 "Finished codegen for target test_10"
+.PHONY : Test/CMakeFiles/test_10.dir/codegen
+
+# clean rule for target.
+Test/CMakeFiles/test_10.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\test_10.dir\build.make Test/CMakeFiles/test_10.dir/clean
+.PHONY : Test/CMakeFiles/test_10.dir/clean
+
+#=============================================================================
+# Target rules for target Test/CMakeFiles/test_11.dir
+
+# All Build rule for target.
+Test/CMakeFiles/test_11.dir/all:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\test_11.dir\build.make Test/CMakeFiles/test_11.dir/depend
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\test_11.dir\build.make Test/CMakeFiles/test_11.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Git_Code\CPP\build\CMakeFiles --progress-num=14,15 "Built target test_11"
+.PHONY : Test/CMakeFiles/test_11.dir/all
+
+# Build rule for subdir invocation for target.
+Test/CMakeFiles/test_11.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Git_Code\CPP\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Test/CMakeFiles/test_11.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Git_Code\CPP\build\CMakeFiles 0
+.PHONY : Test/CMakeFiles/test_11.dir/rule
+
+# Convenience name for target.
+test_11: Test/CMakeFiles/test_11.dir/rule
+.PHONY : test_11
+
+# codegen rule for target.
+Test/CMakeFiles/test_11.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\test_11.dir\build.make Test/CMakeFiles/test_11.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Git_Code\CPP\build\CMakeFiles --progress-num=14,15 "Finished codegen for target test_11"
+.PHONY : Test/CMakeFiles/test_11.dir/codegen
+
+# clean rule for target.
+Test/CMakeFiles/test_11.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\test_11.dir\build.make Test/CMakeFiles/test_11.dir/clean
+.PHONY : Test/CMakeFiles/test_11.dir/clean
+
+#=============================================================================
+# Target rules for target Test/CMakeFiles/test_2.dir
+
+# All Build rule for target.
+Test/CMakeFiles/test_2.dir/all:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\test_2.dir\build.make Test/CMakeFiles/test_2.dir/depend
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\test_2.dir\build.make Test/CMakeFiles/test_2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Git_Code\CPP\build\CMakeFiles --progress-num=16,17 "Built target test_2"
+.PHONY : Test/CMakeFiles/test_2.dir/all
+
+# Build rule for subdir invocation for target.
+Test/CMakeFiles/test_2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Git_Code\CPP\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Test/CMakeFiles/test_2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Git_Code\CPP\build\CMakeFiles 0
+.PHONY : Test/CMakeFiles/test_2.dir/rule
+
+# Convenience name for target.
+test_2: Test/CMakeFiles/test_2.dir/rule
+.PHONY : test_2
+
+# codegen rule for target.
+Test/CMakeFiles/test_2.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\test_2.dir\build.make Test/CMakeFiles/test_2.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Git_Code\CPP\build\CMakeFiles --progress-num=16,17 "Finished codegen for target test_2"
+.PHONY : Test/CMakeFiles/test_2.dir/codegen
+
+# clean rule for target.
+Test/CMakeFiles/test_2.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\test_2.dir\build.make Test/CMakeFiles/test_2.dir/clean
+.PHONY : Test/CMakeFiles/test_2.dir/clean
+
+#=============================================================================
+# Target rules for target Test/CMakeFiles/test_3.dir
+
+# All Build rule for target.
+Test/CMakeFiles/test_3.dir/all:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\test_3.dir\build.make Test/CMakeFiles/test_3.dir/depend
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\test_3.dir\build.make Test/CMakeFiles/test_3.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Git_Code\CPP\build\CMakeFiles --progress-num=18,19 "Built target test_3"
+.PHONY : Test/CMakeFiles/test_3.dir/all
+
+# Build rule for subdir invocation for target.
+Test/CMakeFiles/test_3.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Git_Code\CPP\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Test/CMakeFiles/test_3.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Git_Code\CPP\build\CMakeFiles 0
+.PHONY : Test/CMakeFiles/test_3.dir/rule
+
+# Convenience name for target.
+test_3: Test/CMakeFiles/test_3.dir/rule
+.PHONY : test_3
+
+# codegen rule for target.
+Test/CMakeFiles/test_3.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\test_3.dir\build.make Test/CMakeFiles/test_3.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Git_Code\CPP\build\CMakeFiles --progress-num=18,19 "Finished codegen for target test_3"
+.PHONY : Test/CMakeFiles/test_3.dir/codegen
+
+# clean rule for target.
+Test/CMakeFiles/test_3.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\test_3.dir\build.make Test/CMakeFiles/test_3.dir/clean
+.PHONY : Test/CMakeFiles/test_3.dir/clean
+
+#=============================================================================
+# Target rules for target Test/CMakeFiles/test_4.dir
+
+# All Build rule for target.
+Test/CMakeFiles/test_4.dir/all:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\test_4.dir\build.make Test/CMakeFiles/test_4.dir/depend
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\test_4.dir\build.make Test/CMakeFiles/test_4.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Git_Code\CPP\build\CMakeFiles --progress-num=20,21 "Built target test_4"
+.PHONY : Test/CMakeFiles/test_4.dir/all
+
+# Build rule for subdir invocation for target.
+Test/CMakeFiles/test_4.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Git_Code\CPP\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Test/CMakeFiles/test_4.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Git_Code\CPP\build\CMakeFiles 0
+.PHONY : Test/CMakeFiles/test_4.dir/rule
+
+# Convenience name for target.
+test_4: Test/CMakeFiles/test_4.dir/rule
+.PHONY : test_4
+
+# codegen rule for target.
+Test/CMakeFiles/test_4.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\test_4.dir\build.make Test/CMakeFiles/test_4.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Git_Code\CPP\build\CMakeFiles --progress-num=20,21 "Finished codegen for target test_4"
+.PHONY : Test/CMakeFiles/test_4.dir/codegen
+
+# clean rule for target.
+Test/CMakeFiles/test_4.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\test_4.dir\build.make Test/CMakeFiles/test_4.dir/clean
+.PHONY : Test/CMakeFiles/test_4.dir/clean
+
+#=============================================================================
+# Target rules for target Test/CMakeFiles/test_5.dir
+
+# All Build rule for target.
+Test/CMakeFiles/test_5.dir/all:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\test_5.dir\build.make Test/CMakeFiles/test_5.dir/depend
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\test_5.dir\build.make Test/CMakeFiles/test_5.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Git_Code\CPP\build\CMakeFiles --progress-num=22,23 "Built target test_5"
+.PHONY : Test/CMakeFiles/test_5.dir/all
+
+# Build rule for subdir invocation for target.
+Test/CMakeFiles/test_5.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Git_Code\CPP\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Test/CMakeFiles/test_5.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Git_Code\CPP\build\CMakeFiles 0
+.PHONY : Test/CMakeFiles/test_5.dir/rule
+
+# Convenience name for target.
+test_5: Test/CMakeFiles/test_5.dir/rule
+.PHONY : test_5
+
+# codegen rule for target.
+Test/CMakeFiles/test_5.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\test_5.dir\build.make Test/CMakeFiles/test_5.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Git_Code\CPP\build\CMakeFiles --progress-num=22,23 "Finished codegen for target test_5"
+.PHONY : Test/CMakeFiles/test_5.dir/codegen
+
+# clean rule for target.
+Test/CMakeFiles/test_5.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\test_5.dir\build.make Test/CMakeFiles/test_5.dir/clean
+.PHONY : Test/CMakeFiles/test_5.dir/clean
+
+#=============================================================================
+# Target rules for target Test/CMakeFiles/test_6.dir
+
+# All Build rule for target.
+Test/CMakeFiles/test_6.dir/all:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\test_6.dir\build.make Test/CMakeFiles/test_6.dir/depend
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\test_6.dir\build.make Test/CMakeFiles/test_6.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Git_Code\CPP\build\CMakeFiles --progress-num=24,25 "Built target test_6"
+.PHONY : Test/CMakeFiles/test_6.dir/all
+
+# Build rule for subdir invocation for target.
+Test/CMakeFiles/test_6.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Git_Code\CPP\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Test/CMakeFiles/test_6.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Git_Code\CPP\build\CMakeFiles 0
+.PHONY : Test/CMakeFiles/test_6.dir/rule
+
+# Convenience name for target.
+test_6: Test/CMakeFiles/test_6.dir/rule
+.PHONY : test_6
+
+# codegen rule for target.
+Test/CMakeFiles/test_6.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\test_6.dir\build.make Test/CMakeFiles/test_6.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Git_Code\CPP\build\CMakeFiles --progress-num=24,25 "Finished codegen for target test_6"
+.PHONY : Test/CMakeFiles/test_6.dir/codegen
+
+# clean rule for target.
+Test/CMakeFiles/test_6.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\test_6.dir\build.make Test/CMakeFiles/test_6.dir/clean
+.PHONY : Test/CMakeFiles/test_6.dir/clean
+
+#=============================================================================
+# Target rules for target Test/CMakeFiles/test_7.dir
+
+# All Build rule for target.
+Test/CMakeFiles/test_7.dir/all:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\test_7.dir\build.make Test/CMakeFiles/test_7.dir/depend
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\test_7.dir\build.make Test/CMakeFiles/test_7.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Git_Code\CPP\build\CMakeFiles --progress-num=26,27 "Built target test_7"
+.PHONY : Test/CMakeFiles/test_7.dir/all
+
+# Build rule for subdir invocation for target.
+Test/CMakeFiles/test_7.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Git_Code\CPP\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Test/CMakeFiles/test_7.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Git_Code\CPP\build\CMakeFiles 0
+.PHONY : Test/CMakeFiles/test_7.dir/rule
+
+# Convenience name for target.
+test_7: Test/CMakeFiles/test_7.dir/rule
+.PHONY : test_7
+
+# codegen rule for target.
+Test/CMakeFiles/test_7.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\test_7.dir\build.make Test/CMakeFiles/test_7.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Git_Code\CPP\build\CMakeFiles --progress-num=26,27 "Finished codegen for target test_7"
+.PHONY : Test/CMakeFiles/test_7.dir/codegen
+
+# clean rule for target.
+Test/CMakeFiles/test_7.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\test_7.dir\build.make Test/CMakeFiles/test_7.dir/clean
+.PHONY : Test/CMakeFiles/test_7.dir/clean
+
+#=============================================================================
+# Target rules for target Test/CMakeFiles/test_8.dir
+
+# All Build rule for target.
+Test/CMakeFiles/test_8.dir/all:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\test_8.dir\build.make Test/CMakeFiles/test_8.dir/depend
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\test_8.dir\build.make Test/CMakeFiles/test_8.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Git_Code\CPP\build\CMakeFiles --progress-num=28,29 "Built target test_8"
+.PHONY : Test/CMakeFiles/test_8.dir/all
+
+# Build rule for subdir invocation for target.
+Test/CMakeFiles/test_8.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Git_Code\CPP\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Test/CMakeFiles/test_8.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Git_Code\CPP\build\CMakeFiles 0
+.PHONY : Test/CMakeFiles/test_8.dir/rule
+
+# Convenience name for target.
+test_8: Test/CMakeFiles/test_8.dir/rule
+.PHONY : test_8
+
+# codegen rule for target.
+Test/CMakeFiles/test_8.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\test_8.dir\build.make Test/CMakeFiles/test_8.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Git_Code\CPP\build\CMakeFiles --progress-num=28,29 "Finished codegen for target test_8"
+.PHONY : Test/CMakeFiles/test_8.dir/codegen
+
+# clean rule for target.
+Test/CMakeFiles/test_8.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\test_8.dir\build.make Test/CMakeFiles/test_8.dir/clean
+.PHONY : Test/CMakeFiles/test_8.dir/clean
+
+#=============================================================================
+# Target rules for target Test/CMakeFiles/test_9.dir
+
+# All Build rule for target.
+Test/CMakeFiles/test_9.dir/all:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\test_9.dir\build.make Test/CMakeFiles/test_9.dir/depend
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\test_9.dir\build.make Test/CMakeFiles/test_9.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Git_Code\CPP\build\CMakeFiles --progress-num=30,31 "Built target test_9"
+.PHONY : Test/CMakeFiles/test_9.dir/all
+
+# Build rule for subdir invocation for target.
+Test/CMakeFiles/test_9.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Git_Code\CPP\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Test/CMakeFiles/test_9.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Git_Code\CPP\build\CMakeFiles 0
+.PHONY : Test/CMakeFiles/test_9.dir/rule
+
+# Convenience name for target.
+test_9: Test/CMakeFiles/test_9.dir/rule
+.PHONY : test_9
+
+# codegen rule for target.
+Test/CMakeFiles/test_9.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\test_9.dir\build.make Test/CMakeFiles/test_9.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Git_Code\CPP\build\CMakeFiles --progress-num=30,31 "Finished codegen for target test_9"
+.PHONY : Test/CMakeFiles/test_9.dir/codegen
+
+# clean rule for target.
+Test/CMakeFiles/test_9.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\test_9.dir\build.make Test/CMakeFiles/test_9.dir/clean
+.PHONY : Test/CMakeFiles/test_9.dir/clean
+
+#=============================================================================
+# Target rules for target Test/CMakeFiles/1.dir
+
+# All Build rule for target.
+Test/CMakeFiles/1.dir/all:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\1.dir\build.make Test/CMakeFiles/1.dir/depend
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\1.dir\build.make Test/CMakeFiles/1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Git_Code\CPP\build\CMakeFiles --progress-num=1,2 "Built target 1"
+.PHONY : Test/CMakeFiles/1.dir/all
+
+# Build rule for subdir invocation for target.
+Test/CMakeFiles/1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Git_Code\CPP\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Test/CMakeFiles/1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Git_Code\CPP\build\CMakeFiles 0
+.PHONY : Test/CMakeFiles/1.dir/rule
+
+# Convenience name for target.
+1 : Test/CMakeFiles/1.dir/rule
+.PHONY : 1
+
+# codegen rule for target.
+Test/CMakeFiles/1.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\1.dir\build.make Test/CMakeFiles/1.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Git_Code\CPP\build\CMakeFiles --progress-num=1,2 "Finished codegen for target 1"
+.PHONY : Test/CMakeFiles/1.dir/codegen
+
+# clean rule for target.
+Test/CMakeFiles/1.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Test\CMakeFiles\1.dir\build.make Test/CMakeFiles/1.dir/clean
+.PHONY : Test/CMakeFiles/1.dir/clean
+
+#=============================================================================
+# Target rules for target STL/CMakeFiles/test_Array.dir
+
+# All Build rule for target.
+STL/CMakeFiles/test_Array.dir/all:
+	$(MAKE) $(MAKESILENT) -f STL\CMakeFiles\test_Array.dir\build.make STL/CMakeFiles/test_Array.dir/depend
+	$(MAKE) $(MAKESILENT) -f STL\CMakeFiles\test_Array.dir\build.make STL/CMakeFiles/test_Array.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Git_Code\CPP\build\CMakeFiles --progress-num=32,33 "Built target test_Array"
+.PHONY : STL/CMakeFiles/test_Array.dir/all
+
+# Build rule for subdir invocation for target.
+STL/CMakeFiles/test_Array.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Git_Code\CPP\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 STL/CMakeFiles/test_Array.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Git_Code\CPP\build\CMakeFiles 0
+.PHONY : STL/CMakeFiles/test_Array.dir/rule
+
+# Convenience name for target.
+test_Array: STL/CMakeFiles/test_Array.dir/rule
+.PHONY : test_Array
+
+# codegen rule for target.
+STL/CMakeFiles/test_Array.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f STL\CMakeFiles\test_Array.dir\build.make STL/CMakeFiles/test_Array.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Git_Code\CPP\build\CMakeFiles --progress-num=32,33 "Finished codegen for target test_Array"
+.PHONY : STL/CMakeFiles/test_Array.dir/codegen
+
+# clean rule for target.
+STL/CMakeFiles/test_Array.dir/clean:
+	$(MAKE) $(MAKESILENT) -f STL\CMakeFiles\test_Array.dir\build.make STL/CMakeFiles/test_Array.dir/clean
+.PHONY : STL/CMakeFiles/test_Array.dir/clean
+
+#=============================================================================
+# Target rules for target STL/CMakeFiles/test_Function.dir
+
+# All Build rule for target.
+STL/CMakeFiles/test_Function.dir/all:
+	$(MAKE) $(MAKESILENT) -f STL\CMakeFiles\test_Function.dir\build.make STL/CMakeFiles/test_Function.dir/depend
+	$(MAKE) $(MAKESILENT) -f STL\CMakeFiles\test_Function.dir\build.make STL/CMakeFiles/test_Function.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Git_Code\CPP\build\CMakeFiles --progress-num=34,35 "Built target test_Function"
+.PHONY : STL/CMakeFiles/test_Function.dir/all
+
+# Build rule for subdir invocation for target.
+STL/CMakeFiles/test_Function.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Git_Code\CPP\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 STL/CMakeFiles/test_Function.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Git_Code\CPP\build\CMakeFiles 0
+.PHONY : STL/CMakeFiles/test_Function.dir/rule
+
+# Convenience name for target.
+test_Function: STL/CMakeFiles/test_Function.dir/rule
+.PHONY : test_Function
+
+# codegen rule for target.
+STL/CMakeFiles/test_Function.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f STL\CMakeFiles\test_Function.dir\build.make STL/CMakeFiles/test_Function.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Git_Code\CPP\build\CMakeFiles --progress-num=34,35 "Finished codegen for target test_Function"
+.PHONY : STL/CMakeFiles/test_Function.dir/codegen
+
+# clean rule for target.
+STL/CMakeFiles/test_Function.dir/clean:
+	$(MAKE) $(MAKESILENT) -f STL\CMakeFiles\test_Function.dir\build.make STL/CMakeFiles/test_Function.dir/clean
+.PHONY : STL/CMakeFiles/test_Function.dir/clean
+
+#=============================================================================
+# Target rules for target STL/CMakeFiles/test_UniquePtr.dir
+
+# All Build rule for target.
+STL/CMakeFiles/test_UniquePtr.dir/all:
+	$(MAKE) $(MAKESILENT) -f STL\CMakeFiles\test_UniquePtr.dir\build.make STL/CMakeFiles/test_UniquePtr.dir/depend
+	$(MAKE) $(MAKESILENT) -f STL\CMakeFiles\test_UniquePtr.dir\build.make STL/CMakeFiles/test_UniquePtr.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Git_Code\CPP\build\CMakeFiles --progress-num=36,37 "Built target test_UniquePtr"
+.PHONY : STL/CMakeFiles/test_UniquePtr.dir/all
+
+# Build rule for subdir invocation for target.
+STL/CMakeFiles/test_UniquePtr.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Git_Code\CPP\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 STL/CMakeFiles/test_UniquePtr.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Git_Code\CPP\build\CMakeFiles 0
+.PHONY : STL/CMakeFiles/test_UniquePtr.dir/rule
+
+# Convenience name for target.
+test_UniquePtr: STL/CMakeFiles/test_UniquePtr.dir/rule
+.PHONY : test_UniquePtr
+
+# codegen rule for target.
+STL/CMakeFiles/test_UniquePtr.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f STL\CMakeFiles\test_UniquePtr.dir\build.make STL/CMakeFiles/test_UniquePtr.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Git_Code\CPP\build\CMakeFiles --progress-num=36,37 "Finished codegen for target test_UniquePtr"
+.PHONY : STL/CMakeFiles/test_UniquePtr.dir/codegen
+
+# clean rule for target.
+STL/CMakeFiles/test_UniquePtr.dir/clean:
+	$(MAKE) $(MAKESILENT) -f STL\CMakeFiles\test_UniquePtr.dir\build.make STL/CMakeFiles/test_UniquePtr.dir/clean
+.PHONY : STL/CMakeFiles/test_UniquePtr.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

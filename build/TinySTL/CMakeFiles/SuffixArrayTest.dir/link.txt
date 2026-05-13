@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\SuffixArrayTest.dir/objects.a
+C:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\SuffixArrayTest.dir/objects.a @CMakeFiles\SuffixArrayTest.dir\objects1.rsp
+C:\msys64\ucrt64\bin\c++.exe -Wl,--whole-archive CMakeFiles\SuffixArrayTest.dir/objects.a -Wl,--no-whole-archive -o SuffixArrayTest.exe -Wl,--out-implib,libSuffixArrayTest.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\SuffixArrayTest.dir\linkLibs.rsp
